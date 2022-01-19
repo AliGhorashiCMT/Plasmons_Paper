@@ -8,4 +8,5 @@
     2) Phonon Calculations
     3) Clustering Calculations
     4) Plasmon Calculations
-    5) 
+
+3) Integer_Superlattices: Here, for five alkali metals, we look at the energy as a function of distance from 2x2, 3x3, 4x4 hBN. We then look at the magnetization and the band structure at the equilibrium distance. 
