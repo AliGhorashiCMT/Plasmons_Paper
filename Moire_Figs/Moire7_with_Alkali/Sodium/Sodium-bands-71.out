@@ -1,0 +1,39 @@
+Second Layer Distance is 0.31
+
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca opal_warn_on_missing_libcuda 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+No OpenFabrics connection schemes reported that they were able to be
+used on a specific port.  As such, the openib BTL (OpenFabrics
+support) will be disabled for this port.
+
+  Local host:           d-4-2-4
+  Local device:         mlx5_1
+  Local port:           1
+  CPCs attempted:       rdmacm, udcm
+--------------------------------------------------------------------------
+[d-4-2-3:93187] *** Process received signal ***
+[d-4-2-3:93187] Signal: Segmentation fault (11)
+[d-4-2-3:93187] Signal code: Address not mapped (1)
+[d-4-2-3:93187] Failing at address: (nil)
+[d-4-2-3:93187] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x3f040)[0x7fb6a5cbd040]
+[d-4-2-3:93187] [ 1] /lib/x86_64-linux-gnu/libc.so.6(+0xa9c6e)[0x7fb6a5d27c6e]
+[d-4-2-3:93187] [ 2] /usr/local/pkg/openmpi/4.0.5/lib/libopen-rte.so.40(+0x2b7ff)[0x7fb6a636a7ff]
+[d-4-2-3:93187] [ 3] /usr/local/pkg/openmpi/4.0.5/lib/libopen-rte.so.40(orte_show_help_recv+0x1aa)[0x7fb6a636aeda]
+[d-4-2-3:93187] [ 4] /usr/local/pkg/openmpi/4.0.5/lib/libopen-rte.so.40(orte_rml_base_process_msg+0x43b)[0x7fb6a63bd50b]
+[d-4-2-3:93187] [ 5] /usr/local/pkg/openmpi/4.0.5/lib/libopen-pal.so.40(opal_libevent2022_event_base_loop+0xdc9)[0x7fb6a60f20c9]
+[d-4-2-3:93187] [ 6] mpirun(+0x1002)[0x562dd275f002]
+[d-4-2-3:93187] [ 7] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7)[0x7fb6a5c9fbf7]
+[d-4-2-3:93187] [ 8] mpirun(+0xd8a)[0x562dd275ed8a]
+[d-4-2-3:93187] *** End of error message ***
+/var/spool/slurmd/job12765394/slurm_script: line 17: 93187 Segmentation fault      mpirun jdftx -i Moire.bands.in
