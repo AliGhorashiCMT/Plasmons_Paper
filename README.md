@@ -8,4 +8,13 @@
     2) Phonon Calculations
     3) Clustering Calculations
     4) Plasmon Calculations
-    5) 
+    Top Level Folder Files: 
+    Make_Lattice.ipynb: Code to make the smaller Moire lattice
+    Make_Lattice_13.ipynb : Code to make the larger Moire lattice
+    Subfolders: 
+        Moire7_with_Alkali: 5 Folders for five alkali metals, optimization of distance of alkali metal (pattern is alkali-distance.out
+        Moire13_with_Alkali: Exactly the same as above but for the larger moire superlattice. 
+    
+    
+
+3) Integer_Superlattices: Here, for five alkali metals, we look at the energy as a function of distance from 2x2, 3x3, 4x4 hBN. We then look at the magnetization and the band structure at the equilibrium distance. 
