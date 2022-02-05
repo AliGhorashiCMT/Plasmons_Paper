@@ -1,0 +1,16 @@
+include BN22BC.ionpos
+include BN22BC.lattice
+ion-species SG15/$ID_ONCV_PBE.upf
+#latt-scale 2 2 1
+elec-initial-magnetization ${magnetization} yes
+#elec-initial-magnetization 1 no
+Coulomb-Interaction Slab 001
+elec-smearing Fermi 0.00001
+spintype z-spin
+kpoint-folding 12 12 1
+electronic-SCF nIterations 1000
+#lattice-minimize nIterations 20
+#dump End Lattice IonicPositions
+dump-name BN22BC-${magnetization}.$VAR
+dump End BandEigs State ElecDensity
+

@@ -1,0 +1,28 @@
+charge=-0.2
+--------------------------------------------------------------------------
+The library attempted to open the following supporting CUDA libraries,
+but each of them failed.  CUDA-aware support is disabled.
+libcuda.so.1: cannot open shared object file: No such file or directory
+libcuda.dylib: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.so.1: cannot open shared object file: No such file or directory
+/usr/lib64/libcuda.dylib: cannot open shared object file: No such file or directory
+If you are not interested in CUDA-aware support, then run with
+--mca opal_warn_on_missing_libcuda 0 to suppress this message.  If you are interested
+in CUDA-aware support, then try setting LD_LIBRARY_PATH to the location
+of libcuda.so.1 to get passed this issue.
+--------------------------------------------------------------------------
+[d-17-4-1:86408] *** Process received signal ***
+[d-17-4-1:86408] Signal: Segmentation fault (11)
+[d-17-4-1:86408] Signal code: Address not mapped (1)
+[d-17-4-1:86408] Failing at address: (nil)
+[d-17-4-1:86408] [ 0] /lib/x86_64-linux-gnu/libc.so.6(+0x3f040)[0x7f92976e4040]
+[d-17-4-1:86408] [ 1] /lib/x86_64-linux-gnu/libc.so.6(+0xa9c6e)[0x7f929774ec6e]
+[d-17-4-1:86408] [ 2] /usr/local/pkg/openmpi/4.0.5/lib/libopen-rte.so.40(+0x2b7ff)[0x7f9297d917ff]
+[d-17-4-1:86408] [ 3] /usr/local/pkg/openmpi/4.0.5/lib/libopen-rte.so.40(orte_show_help_recv+0x1aa)[0x7f9297d91eda]
+[d-17-4-1:86408] [ 4] /usr/local/pkg/openmpi/4.0.5/lib/libopen-rte.so.40(orte_rml_base_process_msg+0x43b)[0x7f9297de450b]
+[d-17-4-1:86408] [ 5] /usr/local/pkg/openmpi/4.0.5/lib/libopen-pal.so.40(opal_libevent2022_event_base_loop+0xdc9)[0x7f9297b190c9]
+[d-17-4-1:86408] [ 6] mpirun(+0x1002)[0x555ad0aef002]
+[d-17-4-1:86408] [ 7] /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xe7)[0x7f92976c6bf7]
+[d-17-4-1:86408] [ 8] mpirun(+0xd8a)[0x555ad0aeed8a]
+[d-17-4-1:86408] *** End of error message ***
+/var/spool/slurmd/job12928292/slurm_script: line 14: 86408 Segmentation fault      mpirun jdftx -i BN33BC.in
