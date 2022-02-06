@@ -1,0 +1,334 @@
+
+*************** JDFTx 1.6.0 (git hash 42ebbcc2) ***************
+
+Start date and time: Sun Feb  6 13:16:19 2022
+Executable jdftx with command-line: -i Alkali.in
+Running on hosts (process indices):  d-6-8-2 (0-18)
+Divided in process groups (process indices):  0 (0)  1 (1)  2 (2)  3 (3)  4 (4)  5 (5)  6 (6)  7 (7)  8 (8)  9 (9)  10 (10)  11 (11)  12 (12)  13 (13)  14 (14)  15 (15)  16 (16)  17 (17)  18 (18)
+Resource initialization completed at t[s]:      0.00
+Run totals: 19 processes, 48 threads, 0 GPUs
+
+
+Input parsed successfully to the following command list (including defaults):
+
+basis kpoint-dependent
+coords-type Lattice
+core-overlap-check vector
+coulomb-interaction Slab 001
+davidson-band-ratio 1.1
+dump End None
+dump-name $INPUT.$VAR
+elec-cutoff 20
+elec-eigen-algo Davidson
+elec-ex-corr gga-PBE
+elec-initial-magnetization -0.200000 yes
+elec-smearing Fermi 1e-05
+electronic-minimize  \
+	dirUpdateScheme      FletcherReeves \
+	linminMethod         DirUpdateRecommended \
+	nIterations          100 \
+	history              15 \
+	knormThreshold       0 \
+	energyDiffThreshold  1e-08 \
+	nEnergyDiff          2 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+electronic-scf  \
+	nIterations	10000 \
+	energyDiffThreshold	1e-08 \
+	residualThreshold	1e-07 \
+	mixFraction	0.5 \
+	qMetric	0.8 \
+	history	10 \
+	nEigSteps	2 \
+	eigDiffThreshold	1e-08 \
+	mixedVariable	Density \
+	qKerker	0.8 \
+	qKappa	-1 \
+	verbose	no \
+	mixFractionMag	1.5
+exchange-regularization WignerSeitzTruncated
+fluid None
+fluid-ex-corr (null) lda-PZ
+fluid-gummel-loop 10 1.000000e-05
+fluid-minimize  \
+	dirUpdateScheme      PolakRibiere \
+	linminMethod         DirUpdateRecommended \
+	nIterations          100 \
+	history              15 \
+	knormThreshold       0 \
+	energyDiffThreshold  0 \
+	nEnergyDiff          2 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+fluid-solvent H2O 55.338 ScalarEOS \
+	epsBulk 78.4 \
+	pMol 0.92466 \
+	epsInf 1.77 \
+	Pvap 1.06736e-10 \
+	sigmaBulk 4.62e-05 \
+	Rvdw 2.61727 \
+	Res 1.42 \
+	tauNuc 343133 \
+	poleEl 15 7 1
+forces-output-coords Positions
+ion Cs   0.000000000000000   0.000000000000000   0.000000000000000 0
+ion-species SG15/$ID_ONCV_PBE.upf
+ion-width 0
+ionic-minimize  \
+	dirUpdateScheme      L-BFGS \
+	linminMethod         DirUpdateRecommended \
+	nIterations          0 \
+	history              15 \
+	knormThreshold       0.0001 \
+	energyDiffThreshold  1e-06 \
+	nEnergyDiff          2 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+kpoint   0.000000000000   0.000000000000   0.000000000000  1.00000000000000
+kpoint-folding 12 12 1 
+latt-move-scale 1 1 1
+latt-scale 2 2 1 
+lattice  \
+	   4.727486978767153   -2.363743489383575    0.000000000000000  \
+	  -0.000000000000000    4.094123819672498    0.000000000000000  \
+	   0.000000000000000    0.000000000000000   40.000000000000000 
+lattice-minimize  \
+	dirUpdateScheme      L-BFGS \
+	linminMethod         DirUpdateRecommended \
+	nIterations          0 \
+	history              15 \
+	knormThreshold       0 \
+	energyDiffThreshold  1e-06 \
+	nEnergyDiff          2 \
+	alphaTstart          1 \
+	alphaTmin            1e-10 \
+	updateTestStepSize   yes \
+	alphaTreduceFactor   0.1 \
+	alphaTincreaseFactor 3 \
+	nAlphaAdjustMax      3 \
+	wolfeEnergy          0.0001 \
+	wolfeGradient        0.9 \
+	fdTest               no
+lcao-params -1 1e-06 1e-05
+pcm-variant GLSSA13
+spintype z-spin
+subspace-rotation-factor 1 yes
+symmetries automatic
+symmetry-threshold 0.0001
+
+
+
+---------- Setting up symmetries ----------
+
+Found 24 point-group symmetries of the bravais lattice
+Found 24 space-group symmetries with basis
+Applied RMS atom displacement 0 bohrs to make symmetries exact.
+
+---------- Initializing the Grid ----------
+R = 
+[      9.45497     -4.72749            0  ]
+[            0      8.18825            0  ]
+[            0            0           40  ]
+unit cell volume = 3096.79
+G =
+[   0.664538   0.383671         -0  ]
+[          0   0.767342         -0  ]
+[         -0         -0    0.15708  ]
+Minimum fftbox size, Smin = [  40  40  164  ]
+Chosen fftbox size, S = [  40  40  168  ]
+
+---------- Exchange Correlation functional ----------
+Initalized PBE GGA exchange.
+Initalized PBE GGA correlation.
+
+---------- Setting up pseudopotentials ----------
+Width of ionic core gaussian charges (only for fluid interactions / plotting) set to 0
+
+Reading pseudopotential file '/home/gridsan/aligho/DFT/build-Nov24/pseudopotentials/SG15/Cs_ONCV_PBE.upf':
+  'Cs' pseudopotential, 'PBE' functional
+  Generated using ONCVPSP code by D. R. Hamann
+  Author: Martin Schlipf and Francois Gygi  Date: 150915.
+  9 valence electrons, 3 orbitals, 6 projectors, 2414 radial grid points, with lMax = 2
+  Transforming local potential to a uniform radial grid of dG=0.02 with 1489 points.
+  Transforming nonlocal projectors to a uniform radial grid of dG=0.02 with 432 points.
+    5S    l: 0   occupation:  2.0   eigenvalue: -0.982388
+    5P    l: 1   occupation:  6.0   eigenvalue: -0.496786
+    6S    l: 0   occupation:  1.0   eigenvalue: -0.076670
+  Transforming atomic orbitals to a uniform radial grid of dG=0.02 with 432 points.
+  Core radius for overlap checks: 2.06 bohrs.
+  Reading pulay file /home/gridsan/aligho/DFT/build-Nov24/pseudopotentials/SG15/Cs_ONCV_PBE.pulay ... using dE_dnG = -1.008762e-04 computed for Ecut = 20.
+
+Initialized 1 species with 1 total atoms.
+
+Folded 1 k-points by 12x12x1 to 144 k-points.
+
+---------- Setting up k-points, bands, fillings ----------
+Reduced to 19 k-points under symmetry. 
+Computing the number of bands and number of electrons
+Calculating initial fillings.
+nElectrons:   9.000000   nBands: 6   nStates: 38
+
+----- Setting up reduced wavefunction bases (one per k-point) -----
+average nbasis = 13230.521 , ideal nbasis = 13229.709
+
+---------- Setting up coulomb interaction ----------
+Initialized slab truncation along lattice direction 001
+
+---------- Setting up 2D ewald sum ----------
+Optimum gaussian width for ewald sums = 5.249020 bohr.
+Real space sums over 289 unit cells with max indices [  8  8  0  ]
+Reciprocal space sums over 81 terms with max indices [  4  4  0  ]
+
+---------- Allocating electronic variables ----------
+Initializing wave functions:  linear combination of atomic orbitals
+Note: number of bands (6) exceeds available atomic orbitals (5)
+Cs pseudo-atom occupations:   s ( 2 1 )  p ( 6 )
+	FillingsUpdate:  mu: -0.090769968  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20000  Tot: -0.20000 ]
+LCAOMinimize: Iter:   0  F: -20.1820460292660968  |grad|_K:  4.124e-05  alpha:  1.000e+00
+	FillingsUpdate:  mu: -0.090751351  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20000  Tot: -0.20000 ]
+LCAOMinimize: Iter:   1  F: -20.1820471658198528  |grad|_K:  4.126e-07  alpha:  9.770e-01  linmin: -4.876e-02  cgtest:  3.810e-01  t[s]:      4.57
+LCAOMinimize: Encountered beta<0, resetting CG.
+	FillingsUpdate:  mu: -0.090751455  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20000  Tot: -0.20000 ]
+LCAOMinimize: Iter:   2  F: -20.1820471659369183  |grad|_K:  1.141e-09  alpha:  1.003e+00  linmin:  1.405e-01  cgtest: -8.926e-01  t[s]:      5.81
+LCAOMinimize: 	Step increased F by 3.907985e-14, reducing alpha to 5.571041e-05.
+	FillingsUpdate:  mu: -0.090751455  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20000  Tot: -0.20000 ]
+LCAOMinimize: Iter:   3  F: -20.1820471659369183  |grad|_K:  1.141e-09  alpha:  5.571e-05  linmin: -1.129e-02  cgtest:  1.000e+00  t[s]:      7.63
+LCAOMinimize: Encountered beta<0, resetting CG.
+LCAOMinimize: 	Wrong curvature in test step, increasing alphaT to 1.671312e-04.
+	FillingsUpdate:  mu: -0.090751455  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20000  Tot: -0.20000 ]
+LCAOMinimize: Iter:   4  F: -20.1820471659370178  |grad|_K:  1.141e-09  alpha: -2.778e-11  linmin: -5.419e-02  cgtest:  1.000e+00  t[s]:      8.77
+LCAOMinimize: Encountered beta<0, resetting CG.
+LCAOMinimize: 	Step increased F by 2.167155e-13, reducing alpha to 3.093289e-04.
+LCAOMinimize: 	Step increased F by 1.385558e-13, reducing alpha to 3.093289e-05.
+LCAOMinimize: 	Step increased F by 8.881784e-14, reducing alpha to 3.093289e-06.
+LCAOMinimize: 	Step failed to reduce F after 3 attempts. Quitting step.
+LCAOMinimize: 	Undoing step.
+LCAOMinimize: 	Step failed along negative gradient direction.
+LCAOMinimize: Probably at roundoff error limit. (Stopping)
+
+
+---- Citations for features of the code used in this run ----
+
+   Software package:
+      R. Sundararaman, K. Letchworth-Weaver, K.A. Schwarz, D. Gunceler, Y. Ozhabes and T.A. Arias, 'JDFTx: software for joint density-functional theory', SoftwareX 6, 278 (2017)
+
+   gga-PBE exchange-correlation functional:
+      J.P. Perdew, K. Burke and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996)
+
+   Pseudopotentials:
+      M Schlipf and F Gygi, Comput. Phys. Commun. 196, 36 (2015)
+
+   Truncated Coulomb potentials:
+      R. Sundararaman and T.A. Arias, Phys. Rev. B 87, 165122 (2013)
+
+This list may not be complete. Please suggest additional citations or
+report any other bugs at https://github.com/shankar1729/jdftx/issues
+
+Initialization completed successfully at t[s]:     12.08
+
+
+-------- Electronic minimization -----------
+Will mix electronic density at each iteration.
+	FillingsUpdate:  mu: -0.090751455  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20000  Tot: -0.20000 ]
+	FillingsUpdate:  mu: -0.102869519  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20000  Tot: -0.20000 ]
+SCF: Cycle:  0   F: -20.186874466034055   dF: -4.827e-03   |Residual|: 1.175e-02   |deigs|: 1.881e-01  t[s]:     14.46
+	FillingsUpdate:  mu: -0.103538109  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20000  Tot: -0.20000 ]
+SCF: Cycle:  1   F: -20.187272236868495   dF: -3.978e-04   |Residual|: 9.787e-03   |deigs|: 4.720e-03  t[s]:     16.22
+	FillingsUpdate:  mu: -0.099892736  nElectrons: 9.000000  magneticMoment: [ Abs: 0.21008  Tot: -0.20000 ]
+SCF: Cycle:  2   F: -20.187587545476525   dF: -3.153e-04   |Residual|: 4.337e-03   |deigs|: 3.411e-03  t[s]:     18.17
+	FillingsUpdate:  mu: -0.099537922  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20000  Tot: -0.20000 ]
+SCF: Cycle:  3   F: -20.187703091758273   dF: -1.155e-04   |Residual|: 3.325e-03   |deigs|: 1.872e-03  t[s]:     19.97
+	FillingsUpdate:  mu: -0.096910170  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20158  Tot: -0.20000 ]
+SCF: Cycle:  4   F: -20.187774658327744   dF: -7.157e-05   |Residual|: 2.401e-03   |deigs|: 3.345e-03  t[s]:     21.86
+	FillingsUpdate:  mu: -0.094466209  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20338  Tot: -0.20000 ]
+SCF: Cycle:  5   F: -20.187814144432167   dF: -3.949e-05   |Residual|: 2.097e-03   |deigs|: 2.915e-03  t[s]:     23.80
+	FillingsUpdate:  mu: -0.092176269  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20676  Tot: -0.20000 ]
+SCF: Cycle:  6   F: -20.187824060493671   dF: -9.916e-06   |Residual|: 1.469e-03   |deigs|: 2.792e-03  t[s]:     25.76
+	FillingsUpdate:  mu: -0.090712066  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20467  Tot: -0.20000 ]
+SCF: Cycle:  7   F: -20.187846900304137   dF: -2.284e-05   |Residual|: 1.232e-03   |deigs|: 1.574e-03  t[s]:     27.66
+	FillingsUpdate:  mu: -0.088985501  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20154  Tot: -0.20000 ]
+SCF: Cycle:  8   F: -20.187867514701988   dF: -2.061e-05   |Residual|: 9.815e-04   |deigs|: 1.668e-03  t[s]:     29.63
+	FillingsUpdate:  mu: -0.087562786  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20282  Tot: -0.20000 ]
+SCF: Cycle:  9   F: -20.187854426748142   dF: +1.309e-05   |Residual|: 8.974e-04   |deigs|: 1.472e-03  t[s]:     31.59
+	FillingsUpdate:  mu: -0.085584121  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20390  Tot: -0.20000 ]
+SCF: Cycle: 10   F: -20.187856732031555   dF: -2.305e-06   |Residual|: 8.559e-04   |deigs|: 2.122e-03  t[s]:     33.58
+	FillingsUpdate:  mu: -0.083950002  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20247  Tot: -0.20000 ]
+SCF: Cycle: 11   F: -20.187882008100644   dF: -2.528e-05   |Residual|: 7.123e-04   |deigs|: 1.664e-03  t[s]:     35.56
+	FillingsUpdate:  mu: -0.082589924  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20283  Tot: -0.20000 ]
+SCF: Cycle: 12   F: -20.187901576368631   dF: -1.957e-05   |Residual|: 6.598e-04   |deigs|: 1.308e-03  t[s]:     37.58
+	FillingsUpdate:  mu: -0.080917819  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20190  Tot: -0.20000 ]
+SCF: Cycle: 13   F: -20.187911572333750   dF: -9.996e-06   |Residual|: 5.983e-04   |deigs|: 1.696e-03  t[s]:     39.54
+	FillingsUpdate:  mu: -0.079430949  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20110  Tot: -0.20000 ]
+SCF: Cycle: 14   F: -20.187919992749300   dF: -8.420e-06   |Residual|: 4.472e-04   |deigs|: 1.543e-03  t[s]:     41.51
+	FillingsUpdate:  mu: -0.078789059  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20131  Tot: -0.20000 ]
+SCF: Cycle: 15   F: -20.187923946758019   dF: -3.954e-06   |Residual|: 3.517e-04   |deigs|: 1.536e-03  t[s]:     43.47
+	FillingsUpdate:  mu: -0.078430303  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20040  Tot: -0.20000 ]
+SCF: Cycle: 16   F: -20.187926902668650   dF: -2.956e-06   |Residual|: 2.518e-04   |deigs|: 6.358e-04  t[s]:     45.47
+	FillingsUpdate:  mu: -0.078483564  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20014  Tot: -0.20000 ]
+SCF: Cycle: 17   F: -20.187927857174493   dF: -9.545e-07   |Residual|: 1.210e-04   |deigs|: 2.060e-04  t[s]:     47.44
+	FillingsUpdate:  mu: -0.078549395  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20026  Tot: -0.20000 ]
+SCF: Cycle: 18   F: -20.187928269816041   dF: -4.126e-07   |Residual|: 6.640e-05   |deigs|: 3.819e-04  t[s]:     49.44
+	FillingsUpdate:  mu: -0.078551076  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20014  Tot: -0.20000 ]
+SCF: Cycle: 19   F: -20.187928431269526   dF: -1.615e-07   |Residual|: 3.971e-05   |deigs|: 5.277e-04  t[s]:     51.41
+	FillingsUpdate:  mu: -0.078565186  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20008  Tot: -0.20000 ]
+SCF: Cycle: 20   F: -20.187928473211766   dF: -4.194e-08   |Residual|: 2.417e-05   |deigs|: 1.400e-04  t[s]:     53.42
+	FillingsUpdate:  mu: -0.078578530  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20011  Tot: -0.20000 ]
+SCF: Cycle: 21   F: -20.187928503975360   dF: -3.076e-08   |Residual|: 1.134e-05   |deigs|: 7.243e-05  t[s]:     55.40
+	FillingsUpdate:  mu: -0.078592766  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20013  Tot: -0.20000 ]
+SCF: Cycle: 22   F: -20.187928513207133   dF: -9.232e-09   |Residual|: 6.432e-06   |deigs|: 4.138e-05  t[s]:     57.51
+	FillingsUpdate:  mu: -0.078603095  nElectrons: 9.000000  magneticMoment: [ Abs: 0.20014  Tot: -0.20000 ]
+SCF: Cycle: 23   F: -20.187928518119854   dF: -4.913e-09   |Residual|: 4.230e-06   |deigs|: 1.467e-04  t[s]:     59.56
+SCF: Converged (|Delta E|<1.000000e-08 for 2 iters).
+
+
+# Ionic positions in lattice coordinates:
+ion Cs   0.000000000000000   0.000000000000000   0.000000000000000 0
+
+# Forces in Lattice coordinates:
+force Cs  -0.000000000000000   0.000000000000000   0.000000000000000 0
+
+# Energy components:
+   Eewald =      -18.0480261003326561
+       EH =       -1.8359141957356939
+     Eloc =       -5.7486292922752522
+      Enl =        3.4429038987874607
+   Epulay =        0.0000000264484078
+      Exc =       -3.1438801924305517
+       KE =        5.1456178488786577
+-------------------------------------
+     Etot =      -20.1879280066596252
+       TS =        0.0000005114602277
+-------------------------------------
+        F =      -20.1879285181198540
+
+IonicMinimize: Iter:   0  F: -20.187928518119854  |grad|_K:  0.000e+00  t[s]:     59.68
+IonicMinimize: Converged (|grad|_K<1.000000e-04).
+
+#--- Lowdin population analysis ---
+# oxidation-state Cs +0.047
+# magnetic-moments Cs -0.177
+
+End date and time: Sun Feb  6 13:17:18 2022  (Duration: 0-0:00:59.70)
+Done!
