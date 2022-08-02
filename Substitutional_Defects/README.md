@@ -1,0 +1,10 @@
+Description of Folders Herein: 
+
+BN22BC, BN33BC, BN44BC: Carbon substituting Boron in an hBN lattice
+BN22BC_Buckled, BN33BC_Buckled, BN44BC_Buckled: Carbon substituting Boron, but we allow for JDFTx to find the optimal z distance between the defect lattice 
+and the plane
+
+BN22NC, BN33NC, BN44NC: Carbon substituting Ntirogen in an hBN lattice. Note that we do not explore buckling because the phonon spectrum indicates that the 
+structure is mechanically stable. 
+
+
