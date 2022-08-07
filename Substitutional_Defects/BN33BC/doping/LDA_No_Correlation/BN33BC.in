@@ -1,13 +1,14 @@
 include BN33BC.ionpos
 include BN33BC.lattice
 ion-species SG15/$ID_ONCV_PBE.upf
+elec-ex-corr lda-x c-none
 elec-initial-charge ${charge}
 elec-initial-magnetization 1 no
 Coulomb-Interaction Slab 001
 elec-smearing Fermi 0.00001
 spintype z-spin
-dump-name BN33BC.${charge}.$VAR
+dump-name BN33BC-${charge}.$VAR
 kpoint-folding 12 12 1
 electronic-SCF nIterations 1000
 dump End State BandEigs ElecDensity
-dump End RealSpaceWfns Vscloc
+dump End Vscloc RealSpaceWfns

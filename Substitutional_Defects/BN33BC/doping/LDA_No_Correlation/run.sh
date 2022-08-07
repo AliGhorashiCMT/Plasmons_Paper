@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --exclusive
 #SBATCH -n 38
-#SBATCH -o doping-%a.out
-#SBATCH -a 1-41
+#SBATCH -o BN33BC-%a.out
+#SBATCH -a 29
 source /etc/profile
 module load mpi/openmpi-4.0.5
 module load julia/1.6.1
