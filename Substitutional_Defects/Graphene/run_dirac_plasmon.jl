@@ -8,10 +8,10 @@ using PyPlot, PyCall, Peaks, Statistics, JJDFTX, LinearAlgebra;
 
 dirac_epsilon = zeros(200)
 
-k = (1/6)*(idx/N)
+k = (1.5/6)*(idx/N)
 
 for i in 1:200
-	dirac_epsilon[i]  = JJDFTX.graphene_epsilon(0.5, k, 1.5*(i/200), maxevals=100000)
+	dirac_epsilon[i]  = JJDFTX.graphene_epsilon(0.5, k, 2*(i/200), maxevals=100000)
 end
 open("Dirac.out-$idx", "w") do io
         for (i, epsilon) in enumerate(dirac_epsilon)
