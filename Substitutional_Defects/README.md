@@ -7,4 +7,6 @@ and the plane
 BN22NC, BN33NC, BN44NC: Carbon substituting Ntirogen in an hBN lattice. Note that we do not explore buckling because the phonon spectrum indicates that the 
 structure is mechanically stable. 
 
+Figures: 
 
+Supplementary Figure 3: Inter vs Intraband contributions to plasmonic dispersion
