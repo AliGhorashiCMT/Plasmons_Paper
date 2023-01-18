@@ -1,0 +1,1 @@
+Herein, we analyze regular 3D silver. Decay times are saved in tau.txt. Files referring to gaussian, lorentzian and histogram are just different ways by which an energy conserving delta function is represented. 
