@@ -11,6 +11,7 @@ Figures:
 
 Figure 1: Allbands.pdf and
 
+Supplementary Figure 2: Landau Damping Region. Relevant pdf: LandauDamping.pdf
 Supplementary Figure 3: Inter vs Intraband contributions to plasmonic dispersion
 Supplementary Figure 4: Comparison of Allen vs Shankar decay time. Relevant pdf: Allen_v_Shankar.pdf
 Supplementary Figure 5: Buckling Phonons. Relevant pdf: Buckling-Phonons.pdf
