@@ -9,8 +9,9 @@ structure is mechanically stable.
 
 Figures:
 
-Figure 1: Allbands.pdf and
-
+Figure 1: Allbands.pdf and xsf files for all lattices
+Figure 2: AllPlasmons.pdf and Alltaus_allen.pdf
+Figure 3: 
 Supplementary Figure 2: Landau Damping Region. Relevant pdf: LandauDamping.pdf
 Supplementary Figure 3: Inter vs Intraband contributions to plasmonic dispersion
 Supplementary Figure 4: Comparison of Allen vs Shankar decay time. Relevant pdf: Allen_v_Shankar.pdf
