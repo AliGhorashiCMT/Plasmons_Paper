@@ -1,0 +1,13 @@
+include BN22BC.ionpos
+include BN22BC.lattice
+ion-species SG15/$ID_ONCV_PBE.upf
+elec-initial-charge ${charge}
+elec-initial-magnetization 1 no
+include bandstruct.kpoints
+Coulomb-Interaction Slab 001
+elec-smearing Fermi 0.00001
+spintype z-spin
+electronic-minimize nIterations 1000
+dump End BandEigs
+fix-electron-density BN22BC-${charge}.$VAR
+dump-name BN22BCbands-${charge}.$VAR
