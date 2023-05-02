@@ -1,0 +1,11 @@
+include BN3NC.ionpos
+include BN3NC.lattice
+ion-species SG15/$ID_ONCV_PBE.upf
+elec-initial-magnetization 1 no
+Coulomb-Interaction Slab 001
+elec-smearing Fermi 0.00001
+spintype z-spin
+fix-electron-density BN3NC.$VAR
+include ../BN3BC/bandstruct.kpoints
+electronic-minimize nIterations 1000
+dump End BandEigs
