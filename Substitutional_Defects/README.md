@@ -9,7 +9,8 @@ structure is mechanically stable.
 
 Figures:
 
-Figure 1: Allbands.pdf and xsf files for all lattices
+Figure 1: Allbands.pdf and xsf files for all lattices. The band eigenvalue files for each of the eight lattices is in the corresponding folder with extension
+bands.eigenvals. In figure 1, we have a bunch of comparisons of conductivites with those of graphene at 0.5 eV doping. We explicitly calculate, from first principles, the conductivity of graphene at 0.5 eV doping in ./Graphene/Graphene Conductivity.ipynb
 
 Figure 2: AllPlasmons.pdf and Alltaus_allen.pdf
 
