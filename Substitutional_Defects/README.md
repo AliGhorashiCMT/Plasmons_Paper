@@ -14,6 +14,7 @@ bands.eigenvals. In figure 1, we have a bunch of comparisons of conductivites wi
 Bandwidths are written in large bold font for each material in Figure 1.ipynb
 Conductivity of BN3BC in folder ./BN3BC/Plasmons/ (in appropriately named python notebook)
 Conductivity of BN3NC in folder ./BN3NC/Plasmons/ (in appropriately named python notebook)
+(For all other superlattices, a similar folder and similarly appropriately named python notebook)
 
 Figure 2: AllPlasmons.pdf and Alltaus_allen.pdf
 
