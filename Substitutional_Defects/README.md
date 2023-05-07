@@ -24,12 +24,16 @@ Conductivity of BN3NC in folder ./BN3NC/Plasmons/ (in appropriately named python
 
 **Supplementary Figure 1**: Exchange splitting models. Relevant pdf: Exchange_Splits.pdf
 
-**Supplementary Figure 2**: Landau Damping Region. Relevant pdf: LandauDamping.pdf
+**Supplementary Figure 4**: Landau Damping Region. Relevant pdf: LandauDamping.pdf. 
+Calculations and plots made in Supp Figure 2.ipynb
 
 **Supplementary Figure 3**: Inter vs Intraband contributions to plasmonic dispersion
 
 **Supplementary Figure 4**: Comparison of Allen vs Shankar decay time. Relevant pdf: Allen_v_Shankar.pdf
 
-**Supplementary Figure 5**: Buckling Phonons. Relevant pdf: Buckling-Phonons.pdf
+**Supplementary Figure 6**: Buckling Phonons. Relevant pdf: Buckling-Phonons.pdf 
+Calculations shown in Supp Figure 5.ipynb (yes different number)
+
+
 
 Decay times for graphene, argentene and Ag 3d are stored in respective folders in tau.txt 
