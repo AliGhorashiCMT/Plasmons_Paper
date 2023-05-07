@@ -7,27 +7,29 @@ and the plane
 BN22NC, BN33NC, BN44NC: Carbon substituting Ntirogen in an hBN lattice. Note that we do not explore buckling because the phonon spectrum indicates that the
 structure is mechanically stable.
 
-Figures:
+**Figures**:
 
-Figure 1: Allbands.pdf and xsf files for all lattices. The band eigenvalue files for each of the eight lattices is in the corresponding folder with extension
-bands.eigenvals. In figure 1, we have a bunch of comparisons of conductivites with those of graphene at 0.5 eV doping. We explicitly calculate, from first principles, the conductivity of graphene at 0.5 eV doping in ./Graphene/Graphene Conductivity.ipynb
+**Figure 1**: Allbands.pdf and xsf files for all lattices. 
+The band eigenvalue files for each of the eight lattices is in the corresponding folder with extension bands.eigenvals. 
+In figure 1, we have a bunch of comparisons of conductivites with those of graphene at 0.5 eV doping.
+We explicitly calculate, from first principles, the conductivity of graphene at 0.5 eV doping in ./Graphene/Graphene Conductivity.ipynb
 Bandwidths are written in large bold font for each material in Figure 1.ipynb
 Conductivity of BN3BC in folder ./BN3BC/Plasmons/ (in appropriately named python notebook)
 Conductivity of BN3NC in folder ./BN3NC/Plasmons/ (in appropriately named python notebook)
 (For all other superlattices, a similar folder and similarly appropriately named python notebook)
 
-Figure 2: AllPlasmons.pdf and Alltaus_allen.pdf
+**Figure 2**: AllPlasmons.pdf and Alltaus_allen.pdf
 
-Figure 3: Exchange_Splits.pdf and Doping-Bands.pdf
+**Figure 3**: Exchange_Splits.pdf and Doping-Bands.pdf
 
-Supplementary Figure 1: Exchange splitting models. Relevant pdf: Exchange_Splits.pdf
+**Supplementary Figure 1**: Exchange splitting models. Relevant pdf: Exchange_Splits.pdf
 
-Supplementary Figure 2: Landau Damping Region. Relevant pdf: LandauDamping.pdf
+**Supplementary Figure 2**: Landau Damping Region. Relevant pdf: LandauDamping.pdf
 
-Supplementary Figure 3: Inter vs Intraband contributions to plasmonic dispersion
+**Supplementary Figure 3**: Inter vs Intraband contributions to plasmonic dispersion
 
-Supplementary Figure 4: Comparison of Allen vs Shankar decay time. Relevant pdf: Allen_v_Shankar.pdf
+**Supplementary Figure 4**: Comparison of Allen vs Shankar decay time. Relevant pdf: Allen_v_Shankar.pdf
 
-Supplementary Figure 5: Buckling Phonons. Relevant pdf: Buckling-Phonons.pdf
+**Supplementary Figure 5**: Buckling Phonons. Relevant pdf: Buckling-Phonons.pdf
 
 Decay times for graphene, argentene and Ag 3d are stored in respective folders in tau.txt 
