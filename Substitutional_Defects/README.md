@@ -37,3 +37,5 @@ Calculations shown in Supp Figure 5.ipynb (yes different number)
 
 
 Decay times for graphene, argentene and Ag 3d are stored in respective folders in tau.txt 
+
+hBN epsilon ab initio and wannier is in hBN optimization/supercells/hbn22 (in python notebook)
