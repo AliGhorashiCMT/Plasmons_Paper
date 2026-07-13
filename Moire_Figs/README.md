@@ -4,7 +4,7 @@ Relevant python notebooks:
 
 - **./Moire7_with_Alkali/Rubidium/Plasmons/Analyze.ipynb** for width of Rb charge density (**Figure 1a**)
 
-- **./Moire7_with_Alkali/Litium/Plasmons/Analyze.ipynb** for width of Li charge density (**Figure 1a**)
+- **./Moire7_with_Alkali/Lithium/Plasmons/Analyze.ipynb** for width of Li charge density (**Figure 1a**)
 
 - **./Moire7_with_Alkali/Potassium/Plasmons/Analyze.ipynb** for width of K charge density (**Figure 1a**)
 
@@ -13,4 +13,6 @@ Relevant python notebooks:
 - **./Moire7_with_Alkali/Sodium/plasmons/Analyze.ipynb** for width of Na charge density (**Figure 1a as well as Figure 1b**)
 
 - **./Moire7_with_Alkali/Analyze.ipynb** for band structures of all intercalated lattices considered (**Figure 1a**)
+
+- **Analyze_Fig2.ipynb** for everything relevant to **Figure 2**
 
