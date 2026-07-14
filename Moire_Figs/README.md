@@ -16,3 +16,5 @@ Relevant python notebooks:
 
 - **Analyze_Fig2.ipynb** for everything relevant to **Figure 2**
 
+- **../Substitutional_Defects/Graphene/Analyze_decay_time.ipynb** for **Figure 3b** 
+
