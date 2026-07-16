@@ -1,6 +1,8 @@
-# Plasmons_Paper
+### Plasmons_Paper
 
-# Explanation of Folders
+For the **Moire paper**, you may find detailed descriptions in the README in the directory **./Moire_Figs**
+
+### Explanation of Folders
 
 1) hBN_Optimization: Optimization of a single layer of hBN. Convergence output and the hBN lattice may be found in this folder
 2) Isolated_Atom_Magnetization: Job arrays of 5 different Alkali metals at fixed magnetization for 3 different lattice sizes. 
