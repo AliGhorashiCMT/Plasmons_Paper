@@ -19,5 +19,5 @@ Relevant python notebooks:
 - **../Substitutional_Defects/Graphene/Analyze_decay_time.ipynb** for **Figure 3b**
 
 - **Moire7_with_Alkali/Sodium/optimize_from_3angstroms/Analyze_electron_phonon_losses.ipynb** for **Figure 3a** and **Figure 3c**.
-  - For future reference (mostly for myself) the loaded files from the subdirectory `self_energy_2` which contain the number of states at each energy (these files are of the form `self_energy-muidx$(mu_idx)-nums-$(num).txt` are a little faulty. If you sum up the numbers and normalize, the value is slightly less than unity). This is because the the spacing of the energies is $\approx 0.010025062656641603$, whereas the binning is $1/100$. This introduces an error that is less than half a percent, so it's fine. 
+  - For future reference (mostly for myself) the loaded files from the subdirectory `self_energy_2` which contain the number of states at each energy (these files are of the form `self_energy-muidx$(mu_idx)-nums-$(num).txt` are a little faulty. If you sum up the numbers and normalize, the value is *very* slightly less than unity. This is because the the spacing of the energies is $\approx 0.010025062656641603$, whereas the binning is $1/100$. This introduces an error that is less than half a percent, so it's fine. 
 
